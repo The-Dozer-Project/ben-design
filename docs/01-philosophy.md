@@ -5,8 +5,8 @@ that shape architectural decisions and limit what the system willingly does.
 
 ## Opinionated by Design
 
-Ben by design limits extensibility to reduce boilerplate and eliminate ambiguity. It is not a universal security
-platform or does it aim to operate in every ecosystem. Over-generalized platforms introduce complexity, unclear
+Ben by design limits extensibility to reduce boilerplate and eliminate ambiguity. It is not a universal
+platform, nor does it aim to operate in every ecosystem. Over-generalized platforms introduce complexity, unclear
 ownership, policy ambiguity and introduce error surface. Ben works in a contained way by design.
 
 ## Simple Setup Through Abstraction
