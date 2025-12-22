@@ -4,7 +4,7 @@ This section lists behaviors Ben explicitly **does not** guarantee or require. W
 
 ## Ben Is Not a Required System of Record for History
 
-Complete replay or backfilled timelines are not required for Ben to function. Telemetry can be
+Complete replay or backfilled timelines are not required for Ben to function. Data can be
 partial and/or lossy. Correctness is derived from intent rather than event history.
 
 Replay and/or forensic capabilities may exist as optional planes in the future, however Ben will operate independent

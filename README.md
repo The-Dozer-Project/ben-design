@@ -1,6 +1,6 @@
 # Ben Design
 
-This repository contains the architectural paper and supporting documentation for **Ben**, an intent-driven integrated security platform.
+This repository contains the architectural paper and supporting documentation for **Ben**, an intent-driven integrated security platform (that can do telemetry).
 
 The goal of this document set is to make Ben legible; to clearly describe what the system is, what it does, what it does not do, and why it is structured the way it is.
 

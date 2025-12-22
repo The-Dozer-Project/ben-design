@@ -5,7 +5,7 @@ that shape architectural decisions and limit what the system willingly does.
 
 ## Opinionated by Design
 
-Ben by design limits extensibility to reduce boilerplate and eliminate ambiguity. It is not a universal observability
+Ben by design limits extensibility to reduce boilerplate and eliminate ambiguity. It is not a universal security
 platform or does it aim to operate in every ecosystem. Over-generalized platforms introduce complexity, unclear
 ownership, policy ambiguity and introduce error surface. Ben works in a contained way by design.
 
@@ -29,7 +29,7 @@ knowledge. Ben collapses these responsibilites into on architectural surface.
 
 ## Single-Pass Sanitization Is Insufficient
 
-Single-pass sanitization inherently assumes perfect foresight. Ben operates under the premis data may need to be
+Single-pass sanitization inherently assumes perfect foresight. Ben operates under the premise data may need to be
 examined, re-examined, and go through different handling routines at different stages. The ability to re-introduce
 unsanitized or suspect data into controlled analysis paths is treated as a best practice.
 
@@ -52,13 +52,13 @@ AGPL, Ben ensures improvements remain inspectable.
 
 ## Intent Is More Durable Than Telemetry
 
-Ben's telemetry approach is lossy, partial and failure prone. Intent by schemas, policy, playbooks and activation 
+Ben's data approach is lossy, partial and failure prone. Intent by schemas, policy, playbooks and activation 
 epochs are durable. Prioritizing intent preservation of history preservation, enabling correct re-observation
 failure is the philosophy behind Ben's failure modes
 
 ## Re-Observation Over Replay
 
-Ben makes no attempt to reconstruct past system behavior from incomplete telemetry. After failure, re-observation
+Ben makes no attempt to reconstruct past system behavior from incomplete data. After failure, re-observation
 of reality reconciles telemetry against declared intent. This is to avoid a false continuity and hidden assumption.
 
 ## Explicit and Bounded Authority
@@ -73,7 +73,7 @@ Systems claiming complete continuity oft hide failure; Ben surfaces it.
 
 ## Human Boundaries Are Architectural
 
-Ben assumes human fallibility while under operational pressue. Governance and safety are enforced through system
+Ben assumes human fallibility while under operational pressure. Governance and safety are enforced through system
 architecture. 
 
 ## Refusal as a Feature
