@@ -2,21 +2,27 @@
 
 ---
 
-### **NOTE**:
-NATS is not a god object. I feel I did a bad job with the visual diagrams.
-NATS does the following:
-- NATS distributes schema/config/policy pack change notifications by fanning out messages
-- NATS delivers signals from detectors to sidecars
-- In the instance that the system goes down, components send “hello” messages to NATS which keeps attempting to deliver to
-  the orchestrator until it is online, at which point the orchestrator resumes lifecycle management.
-- NATS does not handle or deliver health messages
-- NATS does not participate in health evaluation
-- NATS does not carry bulk data
-- NATS does not make lifecycle decisions
-- NATS does not sit on the data hot path
-  
-Ideally, NATS is generally low throughput (as opposed to the rest of the system). Data travels up through the hot path.
-I just wanted to add that because I got feedback that from the diagrams NATS looks way more involved than it is.
+### NOTE
+
+**NATS is not a god object.**  
+I feel I did a bad job with the visual diagrams. NATS does the following:
+
+**NATS does:**
+- Distribute schema/config/policy pack change notifications via fan-out
+- Deliver signals from detectors to sidecars
+- Act as a durable mailbox during catastrophic failure:
+  - Components send “hello” messages
+  - Messages are delivered once the orchestrator comes back online
+
+**NATS does not:**
+- Handle or deliver health messages
+- Participate in health evaluation
+- Carry bulk data
+- Make lifecycle decisions
+- Sit on the data hot path
+
+Ideally, NATS is generally low throughput compared to the rest of the system.  
+All bulk data flows through the hot path.
 
 ---
 
