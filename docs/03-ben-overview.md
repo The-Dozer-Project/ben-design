@@ -2,7 +2,7 @@
 
 ---
 
-### NOTE
+## **NOTE**:
 
 **NATS is not a god object.**  
 I feel I did a bad job with the visual diagrams. NATS does the following:
