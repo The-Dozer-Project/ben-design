@@ -1,5 +1,21 @@
 # Ben At a Glance
 
+---
+
+### **NOTE**:
+NATS is not a god object. I feel I did a bad job with the visual diagrams.
+NATS does the following:
+- NATS  coordinates schema/config/policy pack changes by fanning out messages
+- NATS delivers signals from detectors to sidecars
+- NATS is the "go-to" component in catastrophic system failure. In the instance that the system goes down, components sends "hello" messages to NATS 
+  which keeps attempting to deliver to the orchestrator until its online, where the orchestrator handles spin up
+- NATS does not handle or deliver health messages
+  
+Ideally, NATS is generally low throughput (as opposed to the rest of the system). Data travels up through the hot path.
+I just wanted to add that because I got feedback that from the diagrams NATS looks way more involved than it is.
+
+---
+
 Ben is an observability and integrated security platform. As stated in [philosophy](./01-philosophy.md), Ben's goal is 
 to be an intent driven integrated platform based on compile time contracts. This part of the document repo
 aims to show, illuminate and discuss a high level overview of the system. Within this markdown file the authority,
