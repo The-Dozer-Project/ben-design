@@ -97,9 +97,8 @@ The purpose of this repository is clarity, not completeness.
 
 ## Status
 
-This document set represents an early but coherent architectural state.
-
-Feedback, critique, and discussion are welcome, but contributions are intentionally gated to preserve architectural consistency while the system matures.
+Feedback, critique, and discussion are welcome particularly around architectural tradeoffs, failure modes, and systemic assumptions. 
+Contributions are intentionally gated to preserve architectural consistency while the system matures.
 
 ---
 
