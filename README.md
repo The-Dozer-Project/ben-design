@@ -13,7 +13,7 @@ It is a working architectural narrative.
 ### **NOTE**
 Lucius parts of this document have been pulled out and centralized here:
 
-[lucius-design](https://github.com/alex-dozer/lucius-design)
+[lucius-design](https://github.com/The-Dozer-Project/lucius-design)
 
 ---
 
